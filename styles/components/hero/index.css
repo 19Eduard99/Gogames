@@ -1,0 +1,142 @@
+.hero {
+  background-image: url("../assets/images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0 155px;
+}
+.hero .container .hero-cross {
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+}
+.hero .container .hero-cross img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-animation: 10s linear infinite rotating;
+  animation: 10s linear infinite rotating;
+}
+.hero .container .hero-banner {
+  display: none;
+}
+.hero .container .hero-banner .banner {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.hero .container .hero-bg {
+  position: relative;
+}
+.hero .container .hero-bg .hero-bg-box1 {
+  position: absolute;
+  top: -55px;
+  left: -5.5vw;
+  z-index: 1;
+}
+.hero .container .hero-bg .hero-bg-box1 img {
+  max-width: 100%;
+}
+.hero .container .hero-bg .hero-bg-hole {
+  top: 66px;
+  position: relative;
+}
+.hero .container .hero-bg .hero-bg-hole img {
+  max-width: 100%;
+}
+.hero .container .hero-bg .hero-bg-hole .hero-bg-boy {
+  left: -41px;
+  position: absolute;
+  overflow: hidden;
+  top: -115px;
+}
+.hero .container .hero-bg .hero-bg-hole .hero-bg-boy .boy {
+  width: 100%;
+  -webkit-animation: float 1s ease-in-out, fadeIn 2s forwards;
+  animation: float 1s ease-in-out, fadeIn 2s forwards;
+}
+.hero .container .hero-bg .hero-bg-hole .hero-bg-boy .hero-bg-joy {
+  position: absolute;
+  top: 78px;
+  left: 121px;
+  overflow: hidden;
+}
+.hero .container .hero-bg .hero-bg-hole .hero-bg-boy .hero-bg-joy .joy {
+  opacity: 1;
+  width: 100%;
+  -webkit-animation: zoomIn 3s;
+  animation: zoomIn 3s;
+}
+.hero .container .hero-bg .hero-bg-box2 {
+  position: absolute;
+  bottom: -127px;
+  left: -5.5vw;
+}
+.hero .container .hero-bg .hero-bg-box2 img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding: 145px 0 110px;
+  }
+  .hero .container {
+    padding: 0 40px;
+  }
+  .hero .container .text-content .title {
+    line-height: 55px;
+    margin-bottom: 23px;
+  }
+  .hero .container .text-content .sub-title {
+    margin-bottom: 20px;
+  }
+  .hero .container .hero-cross {
+    display: none;
+  }
+  .hero .container .hero-bg {
+    display: none;
+  }
+  .hero .container .hero-banner {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero .container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .hero .container .text-content {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .hero .container .text-content br {
+    display: none;
+  }
+  .hero .container .text-content .title {
+    line-height: 42px;
+    margin-bottom: 12px;
+  }
+  .hero .hero-banner {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    max-width: 400px;
+  }
+  .hero .hero-banner .banner {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .text-content {
+    text-align: center;
+  }
+}
