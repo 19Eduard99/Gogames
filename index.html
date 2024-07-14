@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.min.css">
     <title>Gogames</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
         <a href="#" class="logo">
             <picture>
                 <source srcset="assets/images/Gogames-logo.webp" type="image/webp">
-                <img src="./assets/images/Gogames-logo.webp" alt="Gogames-logo">
+                <img src="./assets/images/Gogames-logo.png" alt="Gogames-logo">
             </picture>
         </a>
 
@@ -94,11 +94,14 @@
 <section class="about-vr">
   <div class="container">
     <div class="about-vr-bg">
-      <img class="screen" src="./assets/images/screen.svg" alt="screen">
-      <img class="game-men" src="./assets/images/game-men.svg" alt="game-men">
+      <img loading="lazy" class="screen" src="./assets/images/screen.svg" alt="screen">
+      <img loading="lazy" class="game-men" src="./assets/images/game-men.svg" alt="game-men">
     </div>
     <div class="about-vr-banner">
-      <img class="banner" src="./assets/images/men-screen.png" alt="">
+      <picture>
+        <source srcset="assets/images/men-screen.webp" type="image/webp">
+        <img loading="lazy" class="banner" src="./assets/images/men-screen.png" alt="men">
+      </picture>
     </div>
     <div class="text-content">
       <p class="sub-title">About VR Glasses</p>
@@ -131,22 +134,25 @@
             </a>
         </div>
         <div class="about-xbox-pc-bg">
-            <img src="./assets/images/shadow.svg" alt="shadow">
+            <img loading="lazy" src="./assets/images/shadow.svg" alt="shadow">
             <div class="bg-leaf">
-                <img class="bg-leaf-left" src="./assets/images/leaf-left.svg" alt="leaf-left">
-                <img class="bg-leaf-right" src="./assets/images/leaf-right.svg"
+                <img loading="lazy" class="bg-leaf-left" src="./assets/images/leaf-left.svg" alt="leaf-left">
+                <img loading="lazy" class="bg-leaf-right" src="./assets/images/leaf-right.svg"
                      alt="leaf-right">
             </div>
-            <img class="bg-wheel-small" src="./assets/images/wheel-small.svg"
+            <img loading="lazy" class="bg-wheel-small" src="./assets/images/wheel-small.svg"
                  alt="wheel-small">
-            <img class="bg-wheel-big"  src="./assets/images/wheel-big.svg"
-                 alt="wheel-small">
-            <img class="bg-clouds" src="./assets/images/clouds.svg" alt="clouds">
-            <img class="bg-controller" src="./assets/images/controller.svg"
+            <img loading="lazy" class="bg-wheel-big"  src="./assets/images/wheel-big.svg"
+                 alt="wheel-big">
+            <img loading="lazy" class="bg-clouds" src="./assets/images/clouds.svg" alt="clouds">
+            <img loading="lazy" class="bg-controller" src="./assets/images/controller.svg"
                  alt="controller">
         </div>
         <div class="about-xbox-pc-banner">
-            <img class="banner" src="./assets/images/about-pc.png" alt="about-pc">
+            <picture>
+                <source srcset="assets/images/about-pc.webp" type="image/webp">
+                <img loading="lazy" class="banner" src="./assets/images/about-pc.png" alt="about-pc">
+            </picture>
         </div>
     </div>
 </section>
@@ -201,7 +207,7 @@
         <a href="#" class="logo">
             <picture>
                 <source srcset="assets/images/Gogames-logo.webp" type="image/webp">
-                <img src="./assets/images/Gogames-logo.png" alt="Gogames-logo">
+                <img loading="lazy" src="./assets/images/Gogames-logo.png" alt="Gogames-logo">
             </picture>
         </a>
         <p class="footer-text">
